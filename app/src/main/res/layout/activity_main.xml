@@ -12,7 +12,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="33dp"
-        android:background="#f7f7f7"
+        android:background="@android:color/holo_blue_light"
         android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -28,7 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:text="Form Pendaftaran Organisasi"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textView"
@@ -37,7 +38,8 @@
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
             android:text="SMK Telkom Malang 2016"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -59,10 +61,12 @@
 
                 <EditText
                     android:id="@+id/editTextNama"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:hint="Nama Lengkap" />
+                    android:hint="Nama Lengkap"
+                    android:textColor="#ffffff" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -71,11 +75,13 @@
 
                 <EditText
                     android:id="@+id/editTextHp"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Nomor HP"
-                    android:inputType="numberSigned" />
+                    android:inputType="numberSigned"
+                    android:textColor="#ffffff" />
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
@@ -89,10 +95,12 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kelas :" />
+                android:text="Kelas :"
+                android:textColor="#ffffff" />
 
             <Spinner
                 android:id="@+id/spinnerKelas"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:entries="@array/kelas" />
@@ -102,7 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Organisasi yang dipilih :" />
+                android:text="Organisasi yang dipilih :"
+                android:textColor="#ffffff" />
 
             <RadioGroup
                 android:id="@+id/radioGroupOrgan"
@@ -114,63 +123,72 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="OSIS" />
+                    android:text="OSIS"
+                    android:textColor="#ffffff" />
 
                 <RadioButton
                     android:id="@+id/radioButtonMPK"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="MPK" />
+                    android:text="MPK"
+                    android:textColor="#ffffff" />
 
                 <RadioButton
                     android:id="@+id/radioButtonPustel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Perpustakaan SMK Telkom Malang" />
+                    android:text="Perpustakaan SMK Telkom Malang"
+                    android:textColor="#ffffff" />
 
                 <RadioButton
                     android:id="@+id/radioButtonDA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Dewan Ambalan" />
+                    android:text="Dewan Ambalan"
+                    android:textColor="#ffffff" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/teOrgan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alasan Memilih Organisasi :" />
+                android:text="Alasan Memilih Organisasi :"
+                android:textColor="#ffffff" />
 
             <CheckBox
                 android:id="@+id/checkBoxTertarik"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Tertarik" />
+                android:text="Tertarik"
+                android:textColor="#ffffff" />
 
             <CheckBox
                 android:id="@+id/checkBoxTantangan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Suka Tantangan" />
+                android:text="Suka Tantangan"
+                android:textColor="#ffffff" />
 
             <CheckBox
                 android:id="@+id/checkBoxPengalaman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Ingin Pengalaman" />
+                android:text="Ingin Pengalaman"
+                android:textColor="#ffffff" />
 
             <CheckBox
                 android:id="@+id/checkBoxIkut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Coba hal baru" />
+                android:text="Coba hal baru"
+                android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/buttonOK"
@@ -259,7 +277,7 @@
             </TableLayout>
             <Button
                 android:id="@+id/buttonReset"
-                android:layout_width="match_parent"
+                android:layout_width="166dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="25dp"
@@ -267,6 +285,13 @@
                 android:text="Reset"
                 android:textColor="#ffffff" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Copyright @ImamNaufalFaruqR" />
 
     </LinearLayout>
 </ScrollView>

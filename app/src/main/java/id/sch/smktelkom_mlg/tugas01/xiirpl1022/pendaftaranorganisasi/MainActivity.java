@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             tvNama.setText("Nama\t: " + nama);
             tvHP.setText("No HP\t: " + nohp);
         } else {
-            Clean();
+            doReset();
         }
 
         //output Kelas
